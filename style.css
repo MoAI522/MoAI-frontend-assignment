@@ -7,62 +7,62 @@
 
 /*---common---*/
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: 1.6rem; /*16px*/
-    line-height: 2;
+  font-size: 1.6rem; /*16px*/
+  line-height: 2;
 }
 
 h1 {
-    font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429)); /*24~36px*/
-    line-height: 1.3;
+  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429)); /*24~36px*/
+  line-height: 1.3;
 }
 
 h2 {
-    font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143)); /*20px~24px*/
-    line-height: 1.3;
+  font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143)); /*20px~24px*/
+  line-height: 1.3;
 }
 
 /*---header---*/
 header {
-    background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .h-inner {
-    max-width: 1280px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    height: 90px;
+  max-width: 1280px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 90px;
 }
 
 .h-nav .navbar-brand {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3.2rem;
-    letter-spacing: 0.8rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.2rem;
+  letter-spacing: 0.8rem;
 }
 
 .h-nav .nav-item {
-    margin-left: 1.8rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  margin-left: 1.8rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .h-nav .dropdown-menu {
-    background-color: #000000;
+  background-color: #000000;
 }
 .h-nav .dropdown-menu .dropdown-item {
-    color: #ffffff;
-    font-size: 1.6rem;
-    line-height: 3;
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 3;
 }
 .h-nav .dropdown-menu .dropdown-item:hover {
-    background-color: #442606;
+  background-color: #442606;
 }
 
 /*---main---*/
@@ -71,84 +71,80 @@ header {
 
 /*-----for tablets (and phones)-----*/
 @media (max-width: 991px) {
-    /*---common---*/
-    
-    /*---header---*/
-    header {
-        background-color: #000000;
-    }
+  /*---common---*/
 
-    .h-inner {
-        max-width: none;
-        padding-left: 0;
-        padding-right: 0;
-        height: auto;
-    }
+  /*---header---*/
+  header {
+    background-color: #000000;
+  }
 
-    .h-nav {
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .h-inner {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+  }
 
-    .h-nav .navbar-brand {
-       padding-left: 5%;
-    }
+  .h-nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    .h-nav .nav-link {
-        color: #ffffff!important;
-    }
+  .h-nav .navbar-brand {
+    padding-left: 5%;
+  }
 
-    .h-nav .nav-item {
-        margin-left: 0;
-        height: auto;
-        display: block;
-    }
+  .h-nav .nav-link {
+    color: #ffffff !important;
+  }
 
-    .h-nav .nav-item .nav-link {
-        padding-left: 5%;
-    }
+  .h-nav .nav-item {
+    margin-left: 0;
+    height: auto;
+    display: block;
+  }
 
-    .h-nav .dropdown-menu {
-        padding-left: 5%;
-    }
-    .h-nav .dropdown-menu .dropdown-item {
-        font-size: 1.2rem;
-    }
-    .h-nav .dropdown-toggle::after {
-        position: absolute;
-        top: 1.6rem;
-        right: 5%;
-    }
+  .h-nav .nav-item .nav-link {
+    padding-left: 5%;
+  }
 
-    /*---main---*/
+  .h-nav .dropdown-menu {
+    padding-left: 5%;
+  }
+  .h-nav .dropdown-menu .dropdown-item {
+    font-size: 1.2rem;
+  }
+  .h-nav .dropdown-toggle::after {
+    position: absolute;
+    top: 1.6rem;
+    right: 5%;
+  }
 
-    /*---footer---*/
+  /*---main---*/
 
+  /*---footer---*/
 }
 
 /*-----for phones-----*/
 @media (max-width: 767px) {
-    /*---common---*/
-    h1 {
-        font-size: 2.4rem;
-    }
+  /*---common---*/
+  h1 {
+    font-size: 2.4rem;
+  }
 
-    h2 {
-        font-size: 2.0rem;
-    }
+  h2 {
+    font-size: 2rem;
+  }
 
-    /*---header---*/
-    .h-nav .navbar-brand {
-        font-size: 2.4rem;
-        line-height: 2.5;
-        padding-left: 5%;
-    }
+  /*---header---*/
+  .h-nav .navbar-brand {
+    font-size: 2.4rem;
+    line-height: 2.5;
+    padding-left: 5%;
+  }
 
-    
+  /*---main---*/
 
-
-    /*---main---*/
-
-    /*---footer---*/
-
+  /*---footer---*/
 }
+
