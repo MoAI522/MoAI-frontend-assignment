@@ -41,9 +41,15 @@ header {
 }
 
 .h-nav .navbar-brand {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 3.2rem;
-  letter-spacing: 0.8rem;
+  position: absolute;
+}
+
+.h-nav .navbar-brand img {
+  width: 50%;
+}
+
+.h-nav .navbar-toggler span {
+  color: #ffffff;
 }
 
 .h-nav .nav-item {
@@ -55,6 +61,7 @@ header {
 
 .h-nav .dropdown-menu {
   background-color: #000000;
+  margin-top: -1px;
 }
 .h-nav .dropdown-menu .dropdown-item {
   color: #ffffff;
@@ -70,7 +77,7 @@ header {
 /*---footer---*/
 
 /*-----for tablets (and phones)-----*/
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   /*---common---*/
 
   /*---header---*/
@@ -91,11 +98,15 @@ header {
   }
 
   .h-nav .navbar-brand {
+    position: relative;
     padding-left: 5%;
+    height: 60px;
+    display: flex;
+    align-content: center;
   }
 
-  .h-nav .nav-link {
-    color: #ffffff !important;
+  .h-nav .navbar-brand img {
+    object-fit: contain;
   }
 
   .h-nav .nav-item {
@@ -126,7 +137,7 @@ header {
 }
 
 /*-----for phones-----*/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   /*---common---*/
   h1 {
     font-size: 2.4rem;
@@ -137,10 +148,9 @@ header {
   }
 
   /*---header---*/
-  .h-nav .navbar-brand {
-    font-size: 2.4rem;
-    line-height: 2.5;
-    padding-left: 5%;
+  .h-nav .navbar-brand img {
+    width: 110px;
+    height: auto;
   }
 
   /*---main---*/
