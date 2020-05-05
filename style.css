@@ -33,23 +33,43 @@ header {
 .h-inner {
   max-width: 1280px;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin: auto;
+  padding: 0 5%;
   height: 90px;
 }
 
-.h-nav .navbar-brand {
-  position: absolute;
-}
-
 .h-nav .navbar-brand img {
-  width: 50%;
+  width: 143px;
 }
 
-.h-nav .navbar-toggler span {
-  color: #ffffff;
+.h-nav .navbar-toggler {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.h-nav .navbar-toggler .humburger-1 {
+  background-color: #ffffff;
+  width: 30%;
+  height: 4.4%;
+  position: absolute;
+  top: 38%;
+  left: 35%;
+}
+.h-nav .navbar-toggler .humburger-2 {
+  background-color: #ffffff;
+  width: 30%;
+  height: 4.4%;
+  position: absolute;
+  top: 47.6%;
+  left: 35%;
+}
+.h-nav .navbar-toggler .humburger-3 {
+  background-color: #ffffff;
+  width: 30%;
+  height: 4.4%;
+  position: absolute;
+  top: 57.2%;
+  left: 35%;
 }
 
 .h-nav .nav-item {
@@ -64,7 +84,6 @@ header {
   margin-top: -1px;
 }
 .h-nav .dropdown-menu .dropdown-item {
-  color: #ffffff;
   font-size: 1.6rem;
   line-height: 3;
 }
@@ -87,8 +106,7 @@ header {
 
   .h-inner {
     max-width: none;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     height: auto;
   }
 
