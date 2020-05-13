@@ -26,6 +26,8 @@ h2 {
 header {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 10;
 }
@@ -100,27 +102,26 @@ header {
 
 /*---main---*/
 /*top*/
-.top {
+#top {
   background-color: #000000;
 }
-.top .mainvisual {
+#top .mainvisual {
   position: relative;
   width: 100%;
+  height: 56.25vw; /*16:9*/
+  background-image: url("./images/mainvisual.jpg");
+  background-size: cover;
 }
 
-.top .mainvisual img {
-  width: 100%;
-}
-
-.top .mainvisual .catchcopy {
+#top .mainvisual .catchcopy {
   display: flex;
   position: absolute;
-  top: 20%;
+  top: 30%;
   width: 100%;
   justify-content: center;
 }
 
-.top .mainvisual .catchcopy span {
+#top .mainvisual .catchcopy span {
   color: #ffffff;
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-size: 3.6rem;
@@ -129,7 +130,7 @@ header {
   white-space: nowrap;
 }
 
-.top .salespoint {
+#top .salespoint {
   text-align: center;
   color: #ffffff;
   padding: 5.0rem 4.0rem 7.0rem 4.0rem;
@@ -215,27 +216,22 @@ header {
 
   /*---main---*/
   /*top*/
-  .top .mainvisual {
+  #top .mainvisual {
     height: 360px;
     overflow: hidden;
     display: flex;
     align-items: center;
   }
-
-  .top .mainvisual img {
-    min-width: 451px; /*画像サイズを元に計算*/
-    min-height: 360px;
-  }
-
-  .top .mainvisual .catchcopy {
+  
+  #top .mainvisual .catchcopy {
     top: auto;
   }
 
-  .top .mainvisual .catchcopy span {
+  #top .mainvisual .catchcopy span {
     font-size: 2.4rem;
   }
 
-  .top .salespoint {
+  #top .salespoint {
     padding: 4.0rem 2.0rem;
   }
 
