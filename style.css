@@ -162,29 +162,31 @@ header {
   color: #000000;
 }
 
-/*appealcards*/
-#appealcards {
+/*appeal-cards*/
+#appeal-cards {
   padding-bottom: 10.0rem;
 }
 
-#appealcards .c-wrapper:nth-of-type(1) {
-  padding: 0 2.0rem 0 0;
+#appeal-cards .c-wrapper:nth-of-type(1) {
+  padding-left: 0;
+  padding-right: 2.0rem;
 }
-#appealcards .c-wrapper:nth-of-type(2) {
+#appeal-cards .c-wrapper:nth-of-type(2) {
   padding: 0 1.0rem;
 }
-#appealcards .c-wrapper:nth-of-type(3) {
-  padding: 0 0 0 2.0rem;
+#appeal-cards .c-wrapper:nth-of-type(3) {
+  padding-left: 2.0rem;
+  padding-right: 0;
 }
 
-#appealcards .card {
+#appeal-cards .card {
   padding: 0;
   background-color: #f5f5f5;
   border: none;
   overflow: hidden;
 }
 
-#appealcards .card::before {
+#appeal-cards .card::before {
   content: "";
   width: 0;
   height: 0;
@@ -194,25 +196,25 @@ header {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-#appealcards .card img {
+#appeal-cards .card img {
   width: 100%;
   height: auto;
 }
 
-#appealcards .card .c-body {
+#appeal-cards .card .c-body {
   padding: 2.0rem;
 }
 
-#appealcards .card .c-body p {
+#appeal-cards .card .c-body p {
   margin-bottom: 3.0rem;
 }
 
-#appealcards .card .c-body .btn-wrapper {
+#appeal-cards .card .c-body .btn-wrapper {
   width: 100%;
   text-align: center;
 }
 
-#appealcards .card .c-body .btn-wrapper a {
+#appeal-cards .card .c-body .btn-wrapper a {
   width: 70%;
   line-height: 4;
   color: #ffffff;
@@ -221,12 +223,12 @@ header {
   display: inline-block;
   transition: background-color 0.2s ease;
 }
-#appealcards .card .c-body .btn-wrapper a:hover {
+#appeal-cards .card .c-body .btn-wrapper a:hover {
   background-color: #442606;
   text-decoration: none;
 }
 
-#appealcards .card .c-title {
+#appeal-cards .card .c-title {
   color: #442606;
   position: absolute;
   top: 0;
@@ -345,25 +347,25 @@ header {
     padding: 5.0rem 0;
   }
 
-  /*appealcards*/
-  #appealcards {
+  /*appeal-cards*/
+  #appeal-cards {
     padding-bottom: 5.0rem;
   }
-  #appealcards .c-wrapper:nth-of-type(1) {
+  #appeal-cards .c-wrapper:nth-of-type(1) {
     padding: 0 2.0rem 2.0rem 2.0rem;
   }
-  #appealcards .c-wrapper:nth-of-type(2) {
+  #appeal-cards .c-wrapper:nth-of-type(2) {
     padding: 0 2.0rem 2.0rem 2.0rem;
   }
-  #appealcards .c-wrapper:nth-of-type(3) {
+  #appeal-cards .c-wrapper:nth-of-type(3) {
     padding: 0 2.0rem;
   }
 
-  #appealcards .card .c-body .btn-wrapper a {
+  #appeal-cards .card .c-body .btn-wrapper a {
     width: 40%;
     font-size: 1.2rem;
   }
-  #appealcards .card .c-body .btn-wrapper a:hover {
+  #appeal-cards .card .c-body .btn-wrapper a:hover {
     background-color: #000000;
   }
 
