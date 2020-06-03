@@ -238,6 +238,122 @@ header {
   line-height: 1;
 }
 
+/*news-and-events*/
+#news-and-events {
+  background-color: #f5f5f5;
+  padding-bottom: 5.0rem;
+}
+
+#news-and-events a {
+  color:#000000;
+}
+#news-and-events a:hover {
+  text-decoration: none;
+}
+
+#news-and-events h2 {
+  font-size: 4.8rem;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-weight: 400;
+}
+
+#news-and-events h2 span {
+  font-size: 1.6rem;
+  margin-left: 1.6rem;
+}
+
+#news-and-events .news, #news-and-events .events {
+  margin-top: 5.0rem;
+}
+
+#news-and-events .news .nw-list, #news-and-events .events .ev-list {
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+#news-and-events .news .nw-list .card {
+  height: 80px;
+  padding: 20px;
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+
+#news-and-events .news .nw-list .card .nw-date {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #999999;
+  margin-bottom: 1.0rem;
+}
+
+#news-and-events .news .nw-list .card .nw-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#news-and-events .events .ev-list .card {
+  padding: 0;
+  margin-bottom: -1px;
+  border-radius: 0;
+  height: 132px;
+}
+
+#news-and-events .events .ev-list .card .ev-image {
+  overflow: hidden;
+}
+
+#news-and-events .events .ev-list .card .ev-image img {
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+#news-and-events .events .ev-list .card:hover img {
+  transform: scale(1.2);
+}
+
+#news-and-events .events .ev-list .card .ev-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#news-and-events .events .ev-list .card .ev-text .ev-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.0rem;
+}
+
+#news-and-events .events .ev-list .card .ev-text .ev-date {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #999999;
+  margin-bottom: 0;
+}
+
+#news-and-events .ne-more {
+  text-align: right;
+}
+
+#news-and-events .ne-more a {
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+#news-and-events .ne-more a::after {
+  content:'>';
+  font-size: 1.4rem;
+  margin-left: 1.0rem;
+}
+#news-and-events .ne-more a:hover {
+  color: #999999;
+}
+
 /*---footer---*/
 
 /*-----for tablets (and phones)-----*/
@@ -298,6 +414,11 @@ header {
   /*common*/
   .salespoint {
     padding: 5.0rem 2.0rem;
+  }
+
+  /*news-and-events*/
+  #news-and-events .events {
+    margin-top: 0;
   }
 
   /*---footer---*/
