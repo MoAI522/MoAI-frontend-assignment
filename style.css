@@ -51,11 +51,13 @@ header {
   border: none;
   outline: none;
 }
+
 .h-nav .navbar-toggler .icon-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
 }
+
 .h-nav .navbar-toggler .icon-wrapper span {
   background-color: #ffffff;
   width: 100%;
@@ -63,6 +65,7 @@ header {
   position: absolute;
   left: 0;
 }
+
 .h-nav .navbar-toggler .icon-wrapper span:nth-of-type(1) {
   top: 0;
 }
@@ -84,6 +87,7 @@ header {
   color: #ffffff;
   transition: color 0.2s ease;
 }
+
 .h-nav .nav-item .nav-link:hover {
   color: #999999;
 }
@@ -92,11 +96,13 @@ header {
   background-color: #000000;
   margin-top: -1px;
 }
+
 .h-nav .dropdown-menu .dropdown-item {
   font-size: 1.6rem;
   line-height: 3;
   color: #ffffff;
 }
+
 .h-nav .dropdown-menu .dropdown-item:hover {
   background-color: #442606;
 }
@@ -113,6 +119,7 @@ header {
   background-color: #000000;
   padding-bottom: 2.0rem;
 }
+
 #top .mainvisual {
   position: relative;
   width: 100%;
@@ -186,7 +193,7 @@ header {
   overflow: hidden;
 }
 
-#appeal-cards .card::before {
+#appeal-cards .card::after {
   content: "";
   width: 0;
   height: 0;
@@ -196,9 +203,19 @@ header {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-#appeal-cards .card img {
+#appeal-cards .card .c-img-wrapper {
+  overflow: hidden;
+}
+
+#appeal-cards .card .c-img-wrapper img {
   width: 100%;
   height: auto;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+#appeal-cards .card .c-img-wrapper:hover img {
+  transform: scale(1.2);
 }
 
 #appeal-cards .card .c-body {
@@ -223,6 +240,7 @@ header {
   display: inline-block;
   transition: background-color 0.2s ease;
 }
+
 #appeal-cards .card .c-body .btn-wrapper a:hover {
   background-color: #442606;
   text-decoration: none;
@@ -236,6 +254,7 @@ header {
   font-size: 2.0rem;
   font-weight: bold;
   line-height: 1;
+  z-index: 1;
 }
 
 /*news-and-events*/
@@ -247,6 +266,7 @@ header {
 #news-and-events a {
   color:#000000;
 }
+
 #news-and-events a:hover {
   text-decoration: none;
 }
@@ -294,6 +314,10 @@ header {
   text-overflow: ellipsis;
 }
 
+#news-and-events .news .nw-list .card:hover .nw-title {
+  color: #442606;
+}
+
 #news-and-events .events .ev-list .card {
   padding: 0;
   margin-bottom: -1px;
@@ -308,9 +332,11 @@ header {
 #news-and-events .events .ev-list .card .ev-image img {
   width: 100%;
   height: auto;
+  min-height: 132px;
   transform: scale(1);
   transition: transform 0.5s ease;
 }
+
 #news-and-events .events .ev-list .card:hover img {
   transform: scale(1.2);
 }
@@ -329,6 +355,10 @@ header {
   margin-bottom: 1.0rem;
 }
 
+#news-and-events .events .ev-list .card:hover .ev-text .ev-title {
+  color: #442606;
+}
+
 #news-and-events .events .ev-list .card .ev-text .ev-date {
   font-size: 1.2rem;
   line-height: 1;
@@ -345,11 +375,13 @@ header {
   line-height: 1;
   transition: color 0.3s ease;
 }
+
 #news-and-events .ne-more a::after {
   content:'>';
   font-size: 1.4rem;
   margin-left: 1.0rem;
 }
+
 #news-and-events .ne-more a:hover {
   color: #999999;
 }
@@ -401,9 +433,11 @@ header {
   .h-nav .dropdown-menu {
     padding-left: 5%;
   }
+
   .h-nav .dropdown-menu .dropdown-item {
     font-size: 1.2rem;
   }
+
   .h-nav .dropdown-toggle::after {
     position: absolute;
     top: 1.6rem;
@@ -486,8 +520,15 @@ header {
     width: 40%;
     font-size: 1.2rem;
   }
+
   #appeal-cards .card .c-body .btn-wrapper a:hover {
     background-color: #000000;
+  }
+
+  /*news-and-events*/
+  #news-and-events .events .ev-list .card .ev-image img {
+    width: auto;
+    height: 100%;
   }
 
   /*---footer---*/
