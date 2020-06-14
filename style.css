@@ -492,6 +492,7 @@ header {
 
 #plans .pl-button:hover {
   background-color: #442506;
+  text-decoration: none;
 }
 
 /*---footer---*/
