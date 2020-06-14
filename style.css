@@ -112,6 +112,15 @@ header {
 .salespoint {
   padding: 5.0rem 0;
   letter-spacing: 1px;
+  text-align: center;
+}
+
+#hitohito .salespoint h2, #plans .salespoint h2 {
+  color: #442606;
+}
+
+#hitohito .salespoint p, #plans .salespoint p {
+  color: #000000;
 }
 
 /*top*/
@@ -159,14 +168,6 @@ header {
 
 #hitohito .salespoint {
   background-color: #f5f5f5;
-}
-
-#hitohito .salespoint h2 {
-  color: #442606;
-}
-
-#hitohito .salespoint p {
-  color: #000000;
 }
 
 /*appeal-cards*/
@@ -386,6 +387,114 @@ header {
   color: #999999;
 }
 
+/*plans*/
+#plans {
+  padding: 5.0rem 0;
+}
+
+#plans .pl-table .pl-detail:nth-of-type(1) {
+  padding-left: 0;
+  padding-right: 2.0rem;
+}
+
+#plans .pl-table .pl-detail:nth-of-type(2) {
+  padding: 0 1.0rem;
+}
+
+#plans .pl-table .pl-detail:nth-of-type(3) {
+  padding-left: 2.0rem;
+  padding-right: 0;
+}
+
+#plans .pl-table .pl-detail ul {
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#plans .pl-table .pl-detail:nth-of-type(2) ul {
+  border: 5px solid #442506;
+}
+
+#plans .pl-table .pl-detail li {
+  text-align: center;
+  line-height: 1;
+  padding: 22px 15px;
+  margin: 0;
+  border: 1px solid #dddddd;
+  border-top: none;
+}
+
+#plans .pl-table .pl-detail:nth-of-type(2) li {
+  border-left: none;
+  border-right: none;
+}
+
+#plans .pl-table .pl-detail .pl-title {
+  background-color: #a19283;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+  letter-spacing: 1px;
+}
+
+#plans .pl-table .pl-detail:nth-of-type(2) .pl-title {
+  background-color: #442506;
+  padding-top: 17px;
+}
+
+#plans .pl-table .pl-detail .pl-price {
+  background-color: #ece9e6;
+  color: #442506;
+  font-family: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 4.0rem;
+  font-weight: 700;
+  line-height: 0.8;
+  padding: 30px 0;
+}
+
+#plans .pl-table .pl-detail .pl-price::before {
+  content:'￥';
+  font-size: 2.0rem;
+}
+
+#plans .pl-table .pl-detail .pl-price::after {
+  content:"\A月額";
+  white-space: pre;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 1.6rem;
+}
+
+#plans .pl-table .pl-detail .pl-other {
+  background-color: #ffffff;
+  color: #442506;
+  font-size: 1.4rem;
+}
+
+#plans .pl-table .pl-detail:nth-of-type(2) .pl-other:last-of-type {
+  border-bottom: none;
+  padding-bottom: 18px;
+}
+
+#plans .pl-button {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  width: 250px;
+  line-height: 1;
+  padding: 2.0rem 0;
+  margin: 3.0rem auto;
+  transition: background-color 0.3s ease;
+}
+
+#plans .pl-button:hover {
+  background-color: #442506;
+  text-decoration: none;
+}
+
 /*---footer---*/
 
 /*-----for tablets (and phones)-----*/
@@ -529,6 +638,41 @@ header {
   #news-and-events .events .ev-list .card .ev-image img {
     width: auto;
     height: 100%;
+  }
+
+  /*plans*/
+  #plans {
+    padding-top: 0;
+  }
+
+  #plans .pl-table .pl-detail:nth-of-type(1), #plans .pl-table .pl-detail:nth-of-type(2), #plans .pl-table .pl-detail:nth-of-type(3) {
+    padding: 0;
+    margin-bottom: 2.0rem;
+  }
+
+  #plans .pl-table .pl-detail li {
+    padding: 17px;
+  }
+
+  #plans .pl-table .pl-detail .pl-title {
+    font-size: 1.4rem;
+  }
+
+  #plans .pl-table .pl-detail:nth-of-type(2) .pl-title {
+    padding-top: 12px;
+  }
+
+  #plans .pl-table .pl-detail .pl-price {
+    padding: 17px;
+  }
+
+  #plans .pl-table .pl-detail:nth-of-type(2) .pl-other:last-of-type {
+    padding-bottom: 12px;
+  }
+
+  #plans .pl-button {
+    margin: 0 auto;
+    width: 200px;
   }
 
   /*---footer---*/
