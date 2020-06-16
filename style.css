@@ -495,6 +495,65 @@ header {
   text-decoration: none;
 }
 
+/*bookcafe-coworking*/
+#bookcafe-coworking {
+  background: url("./images/bookcafe-coworking.jpg") top/cover;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#bookcafe-coworking .salespoint {
+  color: #ffffff;
+  padding: 0 15px;
+}
+
+#bookcafe-coworking .salespoint p {
+  margin-bottom: 30px;
+}
+
+#bookcafe-coworking .bc-bookcafe, #bookcafe-coworking .bc-coworking {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+}
+
+#bookcafe-coworking .bc-bookcafe img, #bookcafe-coworking .bc-coworking img {
+  width: auto;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+#bookcafe-coworking .bc-bookcafe:hover img, #bookcafe-coworking .bc-coworking:hover img {
+  transform: scale(1.2);
+}
+
+#bookcafe-coworking .bc-bookcafe span, #bookcafe-coworking .bc-coworking span {
+  background-color: #ffffff;
+  width: 170px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.6rem;
+  color: #442606;
+  line-height: 120px;
+}
+
+#bookcafe-coworking .bc-bookcafe span::before, #bookcafe-coworking .bc-coworking span::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 60px solid #ffffff;
+  border-top: 120px solid transparent;
+  position: absolute;
+  left: -60px;
+  top: 0;
+}
+
 /*---footer---*/
 
 /*-----for tablets (and phones)-----*/
@@ -673,6 +732,11 @@ header {
   #plans .pl-button {
     margin: 0 auto;
     width: 200px;
+  }
+
+  /*bookcafe-coworking*/
+  #bookcafe-coworking {
+    padding-bottom: 50px;
   }
 
   /*---footer---*/
