@@ -588,7 +588,6 @@ footer .ft-nav {
 
 footer .ft-nav .container-fluid .row .ft-nav-item {
   padding: 0;
-  position: relative;
 }
 
 footer .ft-nav .container-fluid .row .ft-nav-item:not(:last-of-type)::after {
